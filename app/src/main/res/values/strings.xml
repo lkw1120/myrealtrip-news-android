@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">news</string>
+
+
+    <string name="splash_activity">splash activity</string>
+
+    <string name="news_feed_url">https://news.google.com/</string>
+
 </resources>

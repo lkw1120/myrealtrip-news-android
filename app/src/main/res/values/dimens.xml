@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="item_margin_width">0dp</dimen>
+    <dimen name="item_margin_height">10dp</dimen>
+
+    <dimen name="item_thumbnail_width">90dp</dimen>
+    <dimen name="item_thumbnail_height">90dp</dimen>
+    <dimen name="item_thumbnail_margin_width">10dp</dimen>
+    <dimen name="item_thumbnail_margin_height">10dp</dimen>
+    <dimen name="item_thumbnail_radius">0dp</dimen>
+
+    <dimen name="item_title_margin_width">0dp</dimen>
+    <dimen name="item_title_margin_height">2dp</dimen>
+    <dimen name="item_title_text_size">14sp</dimen>
+
+    <dimen name="item_description_margin_width">0dp</dimen>
+    <dimen name="item_description_margin_height">2dp</dimen>
+    <dimen name="item_description_text_size">13sp</dimen>
+
+
+    <dimen name="item_word_list_margin_width">5dp</dimen>
+    <dimen name="item_word_list_margin_height">5dp</dimen>
+    <dimen name="item_word_list_elevation">0dp</dimen>
+    <dimen name="item_word_list_radius">12dp</dimen>
+    <dimen name="item_word_list_text_size">13sp</dimen>
+    <dimen name="item_word_list_text_padding_width">6dp</dimen>
+    <dimen name="item_word_list_text_padding_height">3dp</dimen>
+</resources>
