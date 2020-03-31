@@ -3,19 +3,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+        <variable
+            name="version"
+            type="String" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.SplashActivity">
 
+        <ImageView
+            android:id="@+id/splash_news_icon"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/ic_news"
+            app:layout_constraintBottom_toTopOf="@+id/splash_gap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/splash_rss_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_rss"
+            app:layout_constraintBottom_toTopOf="@+id/splash_gap"
+            app:layout_constraintEnd_toStartOf="@+id/splash_news_icon"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/splash_web_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_web"
+            app:layout_constraintBottom_toTopOf="@+id/splash_gap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/splash_news_icon" />
+
+
+        <View
+            android:id="@+id/splash_gap"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
+            android:id="@+id/splash_text_1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_text_1"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/splash_gap" />
+
+        <TextView
+            android:id="@+id/splash_text_2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_text_2"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/splash_text_1" />
+
+        <TextView
+            android:id="@+id/splash_text_3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_text_3"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/splash_text_2" />
+
+        <TextView
+            android:id="@+id/splash_app_version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/splash_activity"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="24dp"
+            android:text="@{version}"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
