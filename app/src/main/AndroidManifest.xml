@@ -31,6 +31,9 @@
         <activity
             android:theme="@style/NewsTheme"
             android:name=".ui.NewsActivity" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
     </application>
 
 </manifest>

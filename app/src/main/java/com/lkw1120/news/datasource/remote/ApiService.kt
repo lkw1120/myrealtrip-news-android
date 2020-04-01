@@ -1,6 +1,5 @@
 package com.lkw1120.news.datasource.remote
 
-import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Query
 

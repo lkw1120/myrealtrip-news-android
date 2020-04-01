@@ -12,5 +12,5 @@ class ApiRepository(
 ) {
 
     suspend fun getLatest(): Flow<News> =
-        ParserUtil.parsingRss(apiService.getLatest("ko","kR","KR:ko"))
+        ParserUtil().parsingRss(apiService.getLatest("ko","kR","KR:ko"))
 }
