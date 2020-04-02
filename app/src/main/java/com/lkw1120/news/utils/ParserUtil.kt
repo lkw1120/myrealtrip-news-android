@@ -19,18 +19,18 @@ class ParserUtil {
         val doc = Jsoup.parse(xml, "", Parser.xmlParser())
         for(element in doc.select("item"))
         {
-            val title = element.select("title").text()
-            val pubDate = element.select("pubDate").text()
-            val link = element.select("link").text()
-            val guid = element.select("guid").text()
-            val source = element.select("source").text()
+            val title = element.select("title").text().trim()
+            val pubDate = element.select("pubDate").text().trim()
+            val link = element.select("link").text().trim()
+            val guid = element.select("guid").text().trim()
+            val source = element.select("source").text().trim()
             Log.d("NEWS_LINK", link)
             CertificateUtil().postHttps(link,1000,1000)
             val crawling = Jsoup.connect(link).get()
             val thumbnail =
-                crawling.select("meta[property=og:image]").attr("content")
+                crawling.select("meta[property=og:image]").attr("content").trim()
             val description =
-                crawling.select("meta[property=og:description]").attr("content")
+                crawling.select("meta[property=og:description]").attr("content").trim()
             val words = getWords(description)
             emit(News(title, pubDate, link, guid, description, source, thumbnail, words))
         }
