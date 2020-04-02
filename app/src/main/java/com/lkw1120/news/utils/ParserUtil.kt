@@ -28,7 +28,7 @@ class ParserUtil {
             val source = element.select("source").text().trim()
             Log.d("NEWS_LINK", link)
             CertificateUtil().postHttps(link,5000,5000)
-            val crawling = Jsoup.connect(link).get()
+            val crawling = Jsoup.connect(link).ignoreHttpErrors(true).get()
             val thumbnail =
                 crawling.select("meta[property=og:image]").attr("content").trim()
             val description =
