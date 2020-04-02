@@ -10,10 +10,12 @@ import org.jsoup.Jsoup
 import org.jsoup.parser.Parser
 import java.util.Collections.sort
 
+/*
+    Jsoup 을 통한 파싱 및 크롤링
+    https://jsoup.org/
+ */
 class ParserUtil {
-    /*
-        Jsoup 을 통한 파싱 및 크롤링
-     */
+
     fun parsingRss(xml: String): Flow<News> = flow{
 
         val doc = Jsoup.parse(xml, "", Parser.xmlParser())

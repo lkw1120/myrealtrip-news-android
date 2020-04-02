@@ -14,6 +14,7 @@ import org.koin.dsl.module
 
 /*
     Koin을 이용하여 의존성 주입
+    https://insert-koin.io/
  */
 class App: Application() {
 

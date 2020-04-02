@@ -5,6 +5,10 @@ import com.lkw1120.news.R
 import retrofit2.Retrofit
 import retrofit2.converter.scalars.ScalarsConverterFactory
 
+/*
+    Retrofit2 을 통해 RSS 가져오기
+    https://square.github.io/retrofit/
+ */
 class ApiConnection(context: Context) {
 
     private val baseUrl: String = context.getString(R.string.news_feed_url)
