@@ -40,7 +40,7 @@ class ParserUtil {
 
     private fun getWords(description: String): List<String> {
         val map:HashMap<String,Int> = hashMapOf()
-        for(it in description.split("\\s+".toRegex())) {
+        for(it in description.split("""[^\uAC00-\uD7A3xfe0-9a-zA-Z]""".toRegex())) {
             if(it.length >= 2) {
                 map[it] = if(map.containsKey(it)) map[it]!!+1 else 1
             }
