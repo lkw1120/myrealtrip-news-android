@@ -16,23 +16,17 @@
 
     <!-- Splash Activity theme. -->
     <style name="SplashTheme" parent="AppTheme">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
     <!-- Main Activity theme. -->
     <style name="MainTheme" parent="AppTheme">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
     <!-- News Activity theme. -->
     <style name="NewsTheme" parent="AppTheme">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+
     </style>
 
 </resources>

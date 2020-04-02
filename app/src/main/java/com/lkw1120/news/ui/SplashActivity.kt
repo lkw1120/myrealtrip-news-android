@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this,R.layout.activity_splash)
 
         binding.apply {
-            version = application.packageManager.getPackageInfo(application.packageName, 0).versionName
+            version = "v ${application.packageManager.getPackageInfo(application.packageName, 0).versionName}"
         }
 
         this.lifecycleScope.launch {
