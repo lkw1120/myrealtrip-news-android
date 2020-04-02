@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">news</string>
+    <string name="app_name">RSS 뉴스 리더</string>
+
+    <string name="news_feed_url">https://news.google.com/</string>
+
+    <string name="splash_text_1">최신 뉴스를 제공합니다.</string>
+    <string name="splash_text_2">뉴스의 키워드를 알아보세요.</string>
+    <string name="splash_text_3">뉴스를 클릭하면 원본 뉴스를 볼 수 있습니다.</string>
+
 </resources>
