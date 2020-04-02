@@ -38,7 +38,7 @@ class ParserUtil {
 
     private fun getWords(description: String): List<String> {
         val map:HashMap<String,Int> = hashMapOf()
-        for(it in description.split(" ")) {
+        for(it in description.split("\\s+".toRegex())) {
             if(it.length >= 2) {
                 map[it] = if(map.containsKey(it)) map[it]!!+1 else 1
             }
