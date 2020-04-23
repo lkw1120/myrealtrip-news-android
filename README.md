@@ -6,11 +6,6 @@ RSS 뉴스 리더 어플리케이션
 
 20년 03월 16일 12:00 ~ 04월 03일 12:00
 
-
-### 결과
-
-[https://programmers.co.kr/assignments/13108/review_report](https://programmers.co.kr/assignments/13108/review_report)
-
 ### 스크린샷
 
 <img src="https://github.com/lkw1120/myrealtrip-news-android/blob/master/assets/images/Screenshot_2020-04-03-02-17-54.png" width="35%"><img src="https://github.com/lkw1120/myrealtrip-news-android/blob/master/assets/images/Screenshot_2020-04-03-02-18-05.png" width="35%">
